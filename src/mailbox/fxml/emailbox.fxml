@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane fx:id="mySplitPane" dividerPositions="0.33277591973244147" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mailbox.Controller">
+  <items>
+    <AnchorPane fx:id="myAnchorPane1" minHeight="0.0" minWidth="0.0" prefHeight="422.0" prefWidth="196.0">
+         <children>
+            <Button fx:id="btn_login" layoutX="21.0" layoutY="84.0" mnemonicParsing="false" onAction="#handlerBtnLogin" prefHeight="25.0" prefWidth="104.0" text="Login" />
+            <Button fx:id="btn_ricevute" layoutX="21.0" layoutY="145.0" mnemonicParsing="false" onAction="#handlerBtnRicevute" prefHeight="25.0" prefWidth="104.0" text="Ricevute" />
+            <Button fx:id="btn_inviate" layoutX="20.0" layoutY="182.0" mnemonicParsing="false" onAction="#handlerBtnInviate" prefHeight="25.0" prefWidth="104.0" text="Inviate" />
+            <Button fx:id="btn_cestino" layoutX="20.0" layoutY="218.0" mnemonicParsing="false" onAction="#handlerBtnCestino" prefHeight="25.0" prefWidth="104.0" text="Cestino" />
+            <Button fx:id="btn_scrivi" layoutX="19.0" layoutY="254.0" mnemonicParsing="false" onAction="#handlerBtnScrivi" prefHeight="25.0" prefWidth="104.0" text="Scrivi Mail" />
+            <ImageView fitHeight="53.0" fitWidth="62.0" layoutX="42.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@email.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image_icon" fitHeight="62.0" fitWidth="87.0" layoutX="14.0" layoutY="574.0" pickOnBounds="true" preserveRatio="true" />
+            <Text fx:id="user_name" layoutX="86.0" layoutY="609.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="140.800048828125" />
+         </children></AnchorPane>
+
+    <AnchorPane fx:id="myAnchorPane2" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <BorderPane fx:id="myBorderPane" prefHeight="398.0" prefWidth="396.0">
+            </BorderPane>
+         </children>
+    </AnchorPane>
+
+  </items>
+</SplitPane>
